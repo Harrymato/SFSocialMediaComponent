@@ -1,0 +1,39 @@
+.card .slds-card__body { padding: 1rem; }
+.header { padding: 0.5rem 1rem; }
+.settings-icon { float: right; margin: 0.25rem; }
+.badge-container { display: flex; gap: 1rem; padding: 1rem; justify-content: center; }
+
+/* Ensure wrappers stay square */
+.badge-wrapper { position: relative; max-width: 5rem; max-height: 5rem; flex: auto; aspect-ratio: 1; }
+
+/* Button fills wrapper and remains square */
+.badge { width: 100%; height: 100%; border: none; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; transition: transform 0.2s; }
+.badge:hover { transform: scale(1.1); border-radius: 0.75rem; }
+
+/* Icon sizing and containment */
+.icon { max-width: 90%; max-height: 90%; width: auto; height: auto; }
+
+.badge.inactive { opacity: 0.4;}
+
+/* Active Brand Styles */
+.badge.facebook { background-color: #0866ff; }
+.badge.facebook .icon { fill: #FFFFFF; }
+.badge.x { background: radial-gradient(circle, white 50%, black 50%); }
+.badge.x .icon { fill: #FFFFFF; }
+.badge.linkedin { background-color: #007EBB; }
+.badge.linkedin .icon { fill: #FFFFFF; }
+.badge.instagram { background-color: #e1306c; }
+.badge.instagram .icon { fill: none; }
+.badge.github { background-color: #181717; }
+.badge.github .icon { fill: #FFFFFF; }
+.badge.reddit { background-color: #FF4500; }
+.badge.reddit .icon { fill: #FFFFFF; }
+
+/* Edit icon styling */
+.edit-icon { position: absolute; top: -0.5rem; right: -0.5rem; display: none; }
+.badge-wrapper:hover .edit-icon { display: block; }
+
+.styled-modal { border-radius: 0.75rem; padding: 1.5rem; }
+.styled-content { padding: 1rem; }
+.styled-footer { padding: 0.5rem 1rem; }
+.styled-input { margin-bottom: 0.5rem; }

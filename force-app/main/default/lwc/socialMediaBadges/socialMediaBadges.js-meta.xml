@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Social Media Badges</masterLabel>
+    <description>This component allows for a convient and user friendly way of adding and navigating to various social media profiles for the lead/contact/account</description>
+    <targets>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <objects>
+                <object>Lead</object>
+                <object>Contact</object>
+                <object>Account</object>
+            </objects>
+            <property name="facebookField" type="String" label="Facebook Field API Name" default="Facebook_Profile__c"/>
+            <property name="twitterField" type="String" label="Twitter Field API Name" default="X_Profile__c"/>
+            <property name="linkedinField" type="String" label="LinkedIn Field API Name" default="LinkedIn_Profile__c"/>
+            <property name="instagramField" type="String" label="Instagram Field API Name" default="Instagram_Profile__c"/>
+            <property name="githubField" type="String" label="GitHub Field API Name" default="GitHub_Profile__c"/>
+            <property name="redditField" type="String" label="Reddit Field API Name" default="Reddit_Profile__c"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
